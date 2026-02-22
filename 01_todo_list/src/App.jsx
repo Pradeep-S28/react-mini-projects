@@ -6,7 +6,7 @@ function App() {
   const [input, setInput] = useState("");
 
   const addData = () => {
-    if (input.trim) {
+    if (input.trim()) {
       setTasks([...tasks, input]);
       setInput("");
     }
@@ -20,23 +20,27 @@ function App() {
   };
   return (
     <>
-      <h1>Todo APP</h1>
+      <div className="container">
+        <h1>Todo App</h1>
 
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <button onClick={addData}>Add</button>
+        <div className="form-group">
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <button onClick={addData}>Add</button>
+        </div>
 
-      <ul>
-        {tasks.map((task, index) => (
-          <li key={index}>
-            <span>{task}</span>
-            <button onClick={() => removeTask(index)}>X</button>
-          </li>
-        ))}
-      </ul>
+        <ul>
+          {tasks.map((task, index) => (
+            <li key={index}>
+              <span>{task}</span>
+              <button onClick={() => removeTask(index)}>X</button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }

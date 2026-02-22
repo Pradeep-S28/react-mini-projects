@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #e66767;
+  margin-top: 30px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container > h1 {
+  color: #2f3640;
+  text-align: center;
+}
+
+.container > .form-group:first-of-type {
+  height: 35px;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+.container > .form-group:first-of-type > input {
+  height: 100%;
+  width: calc(100%-80px);
+  padding-left: 5px;
+  border: none;
+  outline: none;
+}
+.container > .form-group:first-of-type > button {
+  width: 80px;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: #778beb;
+}
+.container > .form-group:first-of-type > button:hover {
+  background-color: #546de5;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+  font-size: 16px;
+  color: #2d3436;
+}
+
+li button {
+  border: none;
+  background-color: #ff4757;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #e84118;
+}
