@@ -5,9 +5,11 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [input, setInput] = useState("");
 
+  const [checkStatus, SetcheckStatus] = useState(false);
+
   const addData = () => {
     if (input.trim()) {
-      setTasks([...tasks, input]);
+      setTasks([...tasks, { task_name: input, completed: false }]);
       setInput("");
     }
   };
@@ -18,6 +20,19 @@ function App() {
       setTasks(filtered_tasks);
     }
   };
+
+  const checkStatusCheckbox = (index, status) => {
+    let alter_tasks = tasks.map((task, id) => {
+      if (id == index) {
+        return { task_name: task.task_name, completed: !task.completed };
+      }
+
+      return task;
+    });
+
+    setTasks(alter_tasks);
+  };
+
   return (
     <>
       <div className="container">
@@ -35,7 +50,20 @@ function App() {
         <ul>
           {tasks.map((task, index) => (
             <li key={index}>
-              <span>{task}</span>
+              <span>
+                <input
+                  type="checkbox"
+                  id=""
+                  onChange={(e) => checkStatusCheckbox(index, e.target.checked)}
+                />
+              </span>
+              <span
+                style={{
+                  textDecoration: task.completed ? "line-through" : "none",
+                }}
+              >
+                {task.task_name}
+              </span>
               <button onClick={() => removeTask(index)}>X</button>
             </li>
           ))}
