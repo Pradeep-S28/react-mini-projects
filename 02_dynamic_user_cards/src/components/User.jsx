@@ -2,7 +2,9 @@ const User = ({ user }) => {
   const { name, city, description, skills, online, profile } = user;
   return (
     <div className="user-card">
-      <span>{online ? "ONLINE" : "OFFLINE"}</span>
+      <span className={online ? "online" : "offline"}>
+        {online ? "ONLINE" : "OFFLINE"}
+      </span>
       <div>
         <img src={profile} alt="" />
       </div>
@@ -10,7 +12,7 @@ const User = ({ user }) => {
       <h2>{city}</h2>
       <p>{description}</p>
       <div className="buttons">
-        <button>Message</button>
+        <button className="primary">Message</button>
         <button>Following</button>
       </div>
 

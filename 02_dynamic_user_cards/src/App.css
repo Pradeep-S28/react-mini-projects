@@ -12,12 +12,98 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* background-color: red; */
+  align-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .user-card {
+  height: 400px;
+  width: 300px;
   padding: 20px;
   background-color: #34495e;
   color: #fff;
   border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.user-card > span {
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+.user-card > span.online {
+  background-color: #4cd137;
+}
+.user-card > span + div {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+.user-card > h2 {
+  font-size: 18px;
+  color: #ccc;
+}
+.user-card > p {
+  color: #ccc;
+}
+.user-card > div.buttons {
+  display: flex;
+  gap: 10px;
+}
+.user-card > div.buttons button {
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #00a8ff;
+  cursor: pointer;
+}
+.user-card > div.buttons button:hover {
+  background-color: #00a8ff;
+}
+.user-card > div.buttons button.primary {
+  background-color: #00a8ff;
+}
+.user-card > div.buttons button.primary:hover {
+  background-color: #036292;
+  border: 1px solid #036292;
+}
+.user-card > div:last-child h6 {
+  color: #ccc;
+  margin-bottom: 12px;
+}
+.user-card > div:last-child ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.user-card > div:last-child ul li {
+  font-size: 12px;
+  color: #ccc;
+  padding: 5px 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.user-card > div:last-child ul li:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
 }

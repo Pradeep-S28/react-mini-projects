@@ -22,22 +22,30 @@ function App() {
       online: true,
       profile: img3,
     },
-    // {
-    //   name: "Murugan",
-    //   city: "Malasia",
-    //   description: "Senior Analyst",
-    //   skills: [
-    //     "C",
-    //     "C++",
-    //     "Java Programming",
-    //     "Python",
-    //     "C#. Net",
-    //     "MySQL",
-    //     "MongoDB",
-    //   ],
-    //   online: true,
-    //   profile: "images/3.png",
-    // },
+    {
+      name: "Murugan",
+      city: "New York",
+      description: "Full Stack Developer",
+      skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+      online: false,
+      profile: img2,
+    },
+    {
+      name: "Sophia",
+      city: "London",
+      description: "UI/UX Designer",
+      skills: ["Figma", "Adobe XD", "HTML", "CSS", "JavaScript"],
+      online: true,
+      profile: img3,
+    },
+    {
+      name: "David",
+      city: "Toronto",
+      description: "Backend Developer",
+      skills: ["Java", "Spring Boot", "MySQL", "Docker"],
+      online: false,
+      profile: img1, // reused image
+    },
   ];
   return (
     <>
