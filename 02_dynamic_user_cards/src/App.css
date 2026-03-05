@@ -44,6 +44,9 @@ body {
 .user-card > span.online {
   background-color: #4cd137;
 }
+.user-card > span.offline {
+  background-color: #e84118;
+}
 .user-card > span + div {
   height: 100px;
   width: 100px;
