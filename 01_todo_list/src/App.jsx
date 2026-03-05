@@ -26,10 +26,8 @@ function App() {
       if (id == index) {
         return { task_name: task.task_name, completed: !task.completed };
       }
-
       return task;
     });
-
     setTasks(alter_tasks);
   };
 
