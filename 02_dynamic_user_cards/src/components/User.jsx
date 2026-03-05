@@ -20,7 +20,7 @@ const User = ({ user }) => {
         <h6>SKILLS</h6>
         <ul>
           {skills.map((skill, index) => (
-            <li>{skill}</li>
+            <li key={index}>{skill}</li>
           ))}
         </ul>
       </div>
