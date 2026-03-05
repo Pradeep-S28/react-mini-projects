@@ -26,10 +26,11 @@ This repository is focused on improving React fundamentals through consistent im
 
 ## 📂 Projects
 
-| #   | Project Name | Live Demo | Concepts Practiced             |
-| --- | ------------ | --------- | ------------------------------ |
-| 01  | todo_list    | —         | useState, event handling, CRUD |
-| ..  | More Coming  | —         | —                              |
+| #   | Project Name       | Live Demo | Concepts Practiced                                         |
+| --- | ------------------ | --------- | ---------------------------------------------------------- |
+| 01  | todo_list          | —         | useState, event handling, CRUD                             |
+| 02  | user_profile_cards | —         | props, component composition, map(), conditional rendering |
+| ..  | More Coming        | —         | —                                                          |
 
 _(Live demo links will be added once deployed.)_
 
