@@ -42,7 +42,7 @@ function App() {
       name: "David",
       city: "Toronto",
       description: "Backend Developer",
-      skills: ["Java", "Spring Boot", "MySQL", "Docker"],
+      skills: ["Java", "Spring Boot", "MySQL", "Docker", "React"],
       online: false,
       profile: img1, // reused image
     },
