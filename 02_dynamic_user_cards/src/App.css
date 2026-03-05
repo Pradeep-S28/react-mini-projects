@@ -54,6 +54,11 @@ body {
   justify-content: center;
   border: 2px solid white;
 }
+.user-card > span + div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .user-card > h2 {
   font-size: 18px;
   color: #ccc;
